@@ -48,7 +48,7 @@
 			$cookie_name = "user";
 			$cookie_value = "John Doe";
 			if(!isset($_COOKIE[$cookie_name])) {
-            echo "<li><a class='page-scroll' href='#'>Login</a></li>";
+            echo "<li><a class='page-scroll' href='main_login.php'>Login</a></li>";
 			}
 
 			else {
