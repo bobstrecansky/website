@@ -34,6 +34,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
+
                     <li>
                         <a class="page-scroll" href="#about">About Me</a>
                     </li>
@@ -43,10 +44,17 @@
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
-					<?php
-					$user = "Guest";
-					echo "Welcome.$user";
-					</?>
+			<?php
+			$cookie_name = "user";
+			$cookie_value = "John Doe";
+			if(!isset($_COOKIE[$cookie_name])) {
+            echo "<li><a class='page-scroll' href='#'>Login</a></li>";
+			}
+
+			else {
+			echo "<li><a class='page-scroll' href='#'>$_COOKIE[$cookie_name]";
+			}
+			?>
 
 
                 </ul>
