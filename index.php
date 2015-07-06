@@ -52,7 +52,7 @@
 			}
 
 			else {
-			echo "<li><a class='page-scroll' href='#'>$_COOKIE[$cookie_name]";
+			echo "<li><a class='page-scroll' href='#'> WELCOME $_COOKIE[$cookie_name]";
 			}
 			?>
 
@@ -181,7 +181,7 @@
                     <i class="fa fa-phone fa-3x wow bounceIn"></i>
                     <p><a href="tel:+18434228959">843.422.8959</a></p>
                     <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                    <p><a href="mailto:bob.strecansky@gmail.com">bob.strecansky@gmail.com</a></p>
+                    <p><a href="mailto:bob@bobstrecansky.com">bob@bobstrecansky.com</a></p>
                     <i class="fa fa-twitter fa-3x wow bounceIn" data-wow-delay=".1s"></i>
                     <p><a href="https://www.twitter.com/bobstrecansky">@bobstrecansky</a></p>
                     <i class="fa fa-linkedin fa-3x wow bounceIn" data-wow-delay=".1s"></i>
@@ -205,5 +205,6 @@
     <!-- Custom Theme JavaScript -->
     <script src="js/creative.js"></script>
 
+	<?php include "count.php";?>
 </body>
 </html>
